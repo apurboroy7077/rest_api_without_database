@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foods</title>
+  </head>
+  <body>
+    <h2>Foods</h2>
+    <div>
+      <form method="POST" action="/foods">
+        <button type="submit">See Data</button>
+      </form>
+    </div>
+    <div>
+      <form method="POST" action="/foods/post">
+        <div>
+          <div>
+            <input name="foodName" placeholder="Food Name" />
+          </div>
+          <div>
+            <input name="foodPrice" placeholder="Food Price" />
+          </div>
+          <div>
+            <button type="submit">Add Foods</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div>
+      <form method="POST" action="/foods/update">
+        <div>
+          <div>
+            <input name="id" placeholder="Enter ID" />
+          </div>
+          <div>
+            <input name="foodName" placeholder="Updated Food Name" />
+          </div>
+          <div>
+            <input name="foodPrice" placeholder="Updated Food Price" />
+          </div>
+          <div>
+            <button type="submit">Update Food</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div>
+      <form method="POST" action="/foods/delete">
+        <div>
+          <div>
+            <input name="id" placeholder="Enter ID to Delete" />
+          </div>
+          <div>
+            <button type="submit">Delete Food</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
